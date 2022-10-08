@@ -1,0 +1,32 @@
+﻿@model List<Book> 
+
+
+
+<div class="col-4">
+    <div style="font-size:large">
+        Books
+    </div>
+    @{
+        foreach (var book in Model)
+        {
+            <div class="row" style="margin-top:10px" id="@book.Id">
+
+                <div class="card col" style="align-items:flex-start">
+                    @book.BookName
+                </div>
+
+                <a href="/Book/Edit/@book.Id" id="Edit" style="margin-left:5px;width:auto" class="btn btn-primary col-1">
+                    Edit
+                </a>
+
+                <form class="col" asp-controller="Book" asp-action="Delete">
+                    <input type="hidden" name="Id" asp-for="@book.Id" value="@book.Id" />
+                    <button class="btn btn-primary">Delete</button>
+                </form>
+
+
+            </div>
+        }
+    }
+
+</div>

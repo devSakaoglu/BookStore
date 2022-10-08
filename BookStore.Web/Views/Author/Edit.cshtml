@@ -1,0 +1,21 @@
+﻿@model Author
+
+
+<form asp-controller="Author" asp-action="Edit" method="post" >
+
+    <input type="hidden" asp-for="@Model.Id" value="@Model.Id" />
+    <h3>Author Name</h3>
+    <input type="text"  asp-for="AuthorName" placeholder="AuthorName" />
+
+
+    <div class="" >
+        <h3>Author Birth date</h3>
+
+        <input type="date" asp-for="AuthorBirthDate" style="width:150px;height:auto">
+
+    </div>
+
+    <button style="margin-top:10px"> Submit </button>
+
+
+</form>

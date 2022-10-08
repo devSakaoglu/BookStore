@@ -1,0 +1,17 @@
+﻿@model (List<Book> books ,Book book)
+
+<div class="row">
+
+
+
+    <partial name="~/Views/Book/Partials/_ToListPartial.cshtml" for="books">
+
+   
+     <partial name="~/Views/Book/Partials/_AddBookPartial.cshtml" for="book">
+
+
+
+</div>
+
+
+<script src="/lib/Category.js"></script>

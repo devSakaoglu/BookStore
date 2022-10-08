@@ -1,0 +1,22 @@
+﻿@model Book
+
+<div class="col-3" style="align-items:flex-start;height:auto;">
+
+    <div style="font-size:large;">
+        Add Book
+    </div>
+
+    <form asp-controller="Book" asp-action="Create"  >
+
+        <div class="row" style="margin:auto;margin-top:10px">
+
+            <input  name="BookName" class="card col-8 " style="margin:5px;" placeholder="Book Name">
+
+            <button  style="margin:auto;width:auto;" class="btn btn-primary ">Add</button>
+
+        </div>
+    </form>
+
+
+
+</div>

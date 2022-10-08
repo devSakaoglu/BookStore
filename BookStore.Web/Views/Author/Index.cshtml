@@ -1,0 +1,44 @@
+﻿@model List<Author>
+<div class="row">
+
+    <div class="col-4">
+        <div style="font-size:large">
+            Authors
+        </div>
+        @{
+            foreach (var author in Model)
+            {
+                <div class="row" style="margin-top:10px" id="@author.Id">
+
+                    <div class="card col" style="align-items:flex-start">
+                        @author.AuthorName
+                    </div>
+
+                    <a href="/Author/Edit/@author.Id" id="Edit" style="margin-left:5px;width:auto" class="btn btn-primary col-1">
+                        Edit
+                    </a>
+
+                    <form class="col" asp-controller="Author" asp-action="Delete">
+                        <input type="hidden" name="Id" asp-for="@author.Id" value="@author.Id" />
+                        <button style="" class="btn btn-primary">Delete</button>
+                    </form>
+
+                </div>
+            }
+        }
+    </div>
+    <div class="col-3" style="align-items:flex-start;height:auto;">
+        <h4>Add Author</h4>
+        <form asp-controller="Author" asp-action="Create" style="border:solid;border-color:bisque;height:auto">
+            <div class="col" style="margin:1em;margin-top:10px">
+                <input name="AuthorName" class="card col-8 " style="" placeholder="Author Name">
+            </div>
+            <div class="col" style="margin:1em;margin-top:10px">
+                <h5> Author birth date </h5>
+                <input type="date" name="AuthorBirthDate" class="card col-8 " style="width:150px;height:auto" placeholder="Author BirthDate">
+                <button style="margin:1em;width:auto;" class="btn btn-primary  ">Add</button>
+            </div>
+       </form>
+    </div>
+</div>
+

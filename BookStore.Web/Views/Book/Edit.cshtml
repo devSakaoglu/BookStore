@@ -1,0 +1,37 @@
+﻿@model (Book book ,List<Category> categoryList)
+@{
+    var bookCategories = Model.book.Categories;
+}
+<div class="row">
+    <form class="col-3" asp-controller="Book" asp-action="Edit">
+
+        <div>
+
+            <input type="hidden" asp-for="Item1.Id" value="@Model.book.Id" />
+            <h4>BookName</h4>
+            <input type="text" name="BookName" asp-for="Item1.BookName" />
+            <h4>CategoryName</h4>
+
+
+            <select name="CategoryName">
+                @{
+                    <option value="Empty">---No Select---</option>
+                    foreach (var ct in Model.categoryList)
+                    {
+                        <option value="@ct.CategoryName">@ct.CategoryName</option>
+                    }
+                }
+            </select>
+            <button class="col"> Submit </button>
+
+        </div>
+
+
+
+    </form>
+    <partial name="~/Views/Book/Partials/_BookCategoryList.cshtml" for="book"></partial>
+
+    <div class="col-3">
+        <button onclick="window.open('/Book','_self')" class="prm-button">Go to Book List</button>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿@model Book
+@{
+    var bookCategories = Model.Categories;
+}
+<div class="col-5">
+    <h4>Edit Categories </h4>
+    @{
+        if (bookCategories != null)
+        {
+            foreach (var item in bookCategories)
+            {
+                if (item.CategoryName != null)
+                {
+                    <form asp-controller="Book" asp-action="BookCategoryDelete">
+                        <h6 class="col" style="">
+                            @item.CategoryName.ToUpper()
+                            <button style="margin:inherit">Delete</button>
+                        </h6>
+
+                        <input type="hidden" name="bookID" asp-for="@Model.Id" value="@Model.Id">
+                        <input type="hidden" name="caregoryId" asp-for="@item.Id" value="@item.Id">
+                    </form>
+                }
+
+
+            }
+        }
+
+    }
+
+</div>

@@ -1,0 +1,68 @@
+﻿@model List<BookStore.Data.Entities.Category>
+
+
+<div class="row">
+
+    <div class="col-4">
+        <div style="font-size:large">
+            Categories
+        </div>
+        @{
+            foreach (var item in Model)
+            {
+                <div class="row" style="margin-top:10px" id="@item.Id">
+
+                    <div class="card col" style="align-items:flex-start">
+                        @item.CategoryName
+                    </div>
+
+                    <a href="/Category/Edit/@item.Id" id="Edit" style="margin-left:5px;width:auto" class="btn btn-primary col-1">
+                        Edit
+                    </a>
+
+                    <form class="col" asp-controller="Category" asp-action="Delete">
+                        <input type="hidden" name="Id"  value="@item.Id" />
+                        <button class="btn btn-primary">Delete</button>
+                    </form>
+
+
+
+
+
+
+                </div>
+            }
+        }
+
+    </div>
+
+
+    <div class="col-5" id="EditingSpace" style="align-items:flex-start;height:auto;">
+        Editing Space
+    </div>
+
+
+    <div class="col-3" style="align-items:flex-start;height:auto;">
+
+        <div style="font-size:large;">
+            Add Category
+        </div>
+
+        <form asp-controller="Category" asp-action="Create">
+
+            <div class="row" style="margin:auto;margin-top:10px">
+                <input name="categoryName" class="card col-8 " style="margin:5px;" placeholder="Category Name">
+                <button style="margin:auto;width:auto;" class="btn btn-primary ">Add</button>
+
+            </div>
+        </form>
+
+
+
+    </div>
+
+
+</div>
+
+
+

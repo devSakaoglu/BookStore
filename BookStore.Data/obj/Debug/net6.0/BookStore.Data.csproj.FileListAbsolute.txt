@@ -1,0 +1,14 @@
+C:\Users\Talha\Documents\BookStore\BookStore.Data\bin\Debug\net6.0\BookStore.Data.deps.json
+C:\Users\Talha\Documents\BookStore\BookStore.Data\bin\Debug\net6.0\BookStore.Data.runtimeconfig.json
+C:\Users\Talha\Documents\BookStore\BookStore.Data\bin\Debug\net6.0\BookStore.Data.dll
+C:\Users\Talha\Documents\BookStore\BookStore.Data\bin\Debug\net6.0\BookStore.Data.pdb
+C:\Users\Talha\Documents\BookStore\BookStore.Data\obj\Debug\net6.0\BookStore.Data.csproj.AssemblyReference.cache
+C:\Users\Talha\Documents\BookStore\BookStore.Data\obj\Debug\net6.0\BookStore.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Talha\Documents\BookStore\BookStore.Data\obj\Debug\net6.0\BookStore.Data.AssemblyInfoInputs.cache
+C:\Users\Talha\Documents\BookStore\BookStore.Data\obj\Debug\net6.0\BookStore.Data.AssemblyInfo.cs
+C:\Users\Talha\Documents\BookStore\BookStore.Data\obj\Debug\net6.0\BookStore.Data.csproj.CoreCompileInputs.cache
+C:\Users\Talha\Documents\BookStore\BookStore.Data\obj\Debug\net6.0\BookStore.Data.dll
+C:\Users\Talha\Documents\BookStore\BookStore.Data\obj\Debug\net6.0\refint\BookStore.Data.dll
+C:\Users\Talha\Documents\BookStore\BookStore.Data\obj\Debug\net6.0\BookStore.Data.pdb
+C:\Users\Talha\Documents\BookStore\BookStore.Data\obj\Debug\net6.0\BookStore.Data.genruntimeconfig.cache
+C:\Users\Talha\Documents\BookStore\BookStore.Data\obj\Debug\net6.0\ref\BookStore.Data.dll
